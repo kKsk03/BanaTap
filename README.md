@@ -20,6 +20,7 @@ In the game, press the `C` key on your keyboard to trigger the sending of card d
 | Game | Revision | Output file |
 |:----:|:----:|:--------:|
 | WMMT6RR | `3.05.03` | `dist/w6w/3.05.03/bngrw.dll` |
+| WMMT6R | `2.00.08` | `dist/w6r/2.00.08/bngrw.dll` |
 | WMMT5DX+ | `3.05.00` | `dist/w5p/3.05.00/bngrw.dll` |
 
 ## Build

@@ -1,4 +1,4 @@
-project('BanaTap', 'c', 'cpp', version: '1.0.0',
+project('BanaTap', 'c', 'cpp', version: '1.0.1',
     default_options: [
         'buildtype=release',
         'optimization=s',
@@ -47,6 +47,15 @@ library(
     'bngrw_w6w_30503',
     include_directories: ['src'],
     sources: common_sources + ['src/dllmain_w6w_30503.cpp'],
+    name_prefix: '',
+    link_args: ['-static'],
+)
+
+# W6R 2.00.08
+library(
+    'bngrw_w6r_20008',
+    include_directories: ['src'],
+    sources: common_sources + ['src/dllmain_w6r_20008.cpp'],
     name_prefix: '',
     link_args: ['-static'],
 )
