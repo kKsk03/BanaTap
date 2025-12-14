@@ -3,7 +3,7 @@
 
 #define PATCH_OFFSET 0x793A68
 
-// W5P 3.05.00 Function Address Offset
+// W5X 2.00.02 Function Address Offset
 #define ADDR_BngRwAttach       0xB4D6E0
 #define ADDR_BngRwInit         0xB4CDA0
 #define ADDR_BngRwFin          0xB4CE30
