@@ -1,4 +1,4 @@
-project('BanaTap', 'c', 'cpp', version: '1.0.1',
+project('BanaTap', 'c', 'cpp', version: '1.0.2',
     default_options: [
         'buildtype=release',
         'optimization=s',
@@ -56,6 +56,16 @@ library(
     'bngrw_w6r_20008',
     include_directories: ['src'],
     sources: common_sources + ['src/dllmain_w6r_20008.cpp'],
+    name_prefix: '',
+    link_args: ['-static'],
+)
+
+# WM5 1.05.00
+library(
+    'bngrw_wm5_10500',
+    include_directories: ['src'],
+    sources: common_sources + ['src/dllmain_wm5_10500.cpp'],
+    dependencies: [minhook_dep],
     name_prefix: '',
     link_args: ['-static'],
 )
